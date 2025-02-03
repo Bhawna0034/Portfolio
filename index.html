@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="max-w-[1440px] mx-auto overflow-x-hidden scroll-smooth relative ">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white flex items-center justify-between z-10 px-6 py-2 lg:px-16 lg:py-4 z-10"
+        style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+        <a href="#" class="text-[2rem] text-gray-900 font-bold">Portfolio</a>
+        <i class="lg:hidden fa-solid fa-bars text-[2rem] cursor-pointer" id="menu-icon"></i>
+        <nav class="hidden lg:flex space-x-6">
+            <a href="#home" class="text-[1.2rem] text-[#333333] font-medium active:text-black">Home</a>
+            <a href="#about" class="text-[1.2rem] text-[#333333] font-medium">About</a>
+            <a href="#skills" class="text-[1.2rem] text-[#333333] font-medium">Skills</a>
+            <a href="#projects" class="text-[1.2rem] text-[#333333] font-medium">Projects</a>
+            <a href="#certificates" class="text-[1.2rem] text-[#333333] font-medium">Certificates</a>
+            <button class="bg-[#A53DFF] px-4 py-1 rounded-md">
+                <a href="#contact" class="text-[1.2rem] text-white font-medium">Contact</a>
+            </button>
+        </nav>
+    </header>
+
+    <main class="">
+        <!-- Home -->
+        <section id="home" class="bg-gradient-to-r from-white to-purple-100 px-6 lg:px-16  py-28 lg:py-36 ">
+            <div class="flex flex-col lg:flex-row gap-6 items-center justify-between ">
+                <!-- Left Home -->
+                <div class="space-y-6 lg:w-[60%]">
+                    <div class="space-y-1">
+                        <h1 class="text-[3rem] text-gray-500 font-semibold">👋Hi, I'm </h1>
+                        <h2 class="text-[3.6rem] lg:text-[4.5rem] text-[#A53DFF] font-bold mb-2">Bhawna Sharma</h2>
+                        <h3 class="text-[2rem] text-[#132238] font-medium">Frontend Developer Intern</h3>
+                    </div>
+
+                    <p class="text-lg text-gray-800">Passionate about crafting engaging and responsive web experiences.
+                        Proficient in HTML, CSS, JavaScript, Java, and Spring Boot, I build dynamic applications that
+                        prioritize both user experience and performance. Let's connect!</p>
+
+                    <div id="home-socials" class="space-x-[1px]">
+                        <a href="https://www.linkedin.com/in/bhawna0034/" target="_blank"
+                            class="max-w-12 max-h-12 border-2 border-[#A53DFF] rounded-full px-2 py-1 hover:bg-[#A53DFF] group"><i
+                                class="fa-brands fa-linkedin-in font-bold group-hover:text-white"></i></a>
+                        <a href="https://github.com/Bhawna0034" target="_blank"
+                            class="max-w-12 max-h-12 border-2 border-[#A53DFF] rounded-full px-2 py-1 hover:bg-[#A53DFF] group"><i
+                                class="fa-brands fa-github font-bold group-hover:text-white"></i></a>
+                        <a href="https://www.hackerrank.com/profile/bhawnasharma7216" target="_blank"
+                            class="max-w-12 max-h-12 border-2 border-[#A53DFF] rounded-full px-2 py-1 hover:bg-[#A53DFF] group"><i
+                                class="fa-brands fa-hackerrank font-bold group-hover:text-white"></i></a>
+                        <!-- <a href="mailto:bhawnaasharma2002@gmail.com" 
+                            class="max-w-12 max-h-12 border-2 border-[#A53DFF] rounded-full px-2 py-1 hover:bg-[#A53DFF] group">
+                            <i class="fa-solid fa-envelope font-bold group-hover:text-white"></i></a> -->
+
+                    </div>
+                    <button
+                        class="border border-[#A53DFF] bg-[#A53DFF]  text-white  font-semibold px-4 py-2 rounded-lg hover:opacity-80 hover:-translate-y-1 duration-300 transition">
+                        <a href="BhawnaCV.pdf" download="BhawnaCV.pdf" class="flex items-center gap-2 justify-between">
+                            <span>Download CV</span>
+                            <i class="fa-solid fa-download"></i>
+
+                        </a>
+                    </button>
+                </div>
+
+                <!-- Right Home -->
+                <img src="./Images/Bhawna.jpg" alt="Profile" width="400"
+                    class=" object-cover rounded-lg max-md:w-[500px] flex items-center">
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="bg-white px-6 py-28 lg:px-16 lg:py-28">
+            <div class="flex flex-col items-center gap-y-2">
+                <h2 class="text-[2.75rem] font-bold">About <span class="text-[#A53DFF]">Me</span></h2>
+                <p class="text-lg text-justify font-medium">I’m a Frontend Developer with a strong foundation in HTML,
+                    CSS, JavaScript. Currently, I’m gaining hands-on experience as a Frontend Developer Intern, building
+                    interactive and user-friendly web applications.
+
+                    I also have experience with Java, Spring Boot, Hibernate, and MySQL, which gives me a solid backend
+                    understanding. My goal is to become a Full Stack Developer, combining both frontend and backend
+                    expertise to build complete, scalable web applications.
+
+                    I’m passionate about coding, problem-solving, and continuously learning new technologies. Right now,
+                    I’m looking for opportunities to grow my skills and collaborate with teams that value innovation and
+                    creativity in software development.</p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="bg-[#EDD8FF80] px-6 py-28 lg:px-16 lg:py-28">
+            <h2 class="text-[2.75rem] font-bold text-center mb-16">Technical <span class="text-[#A53DFF]">Skills</span>
+            </h2>
+            <div class="grid max-md:grid-cols-3 lg:flex flex-wrap gap-8  items-center justify-center mx-auto">
+                <div class="flex flex-col items-center max-w-[200px] max-h-[200px] bg-white hover:bg-[#A53DFF] p-4 lg:p-6 rounded-xl space-y-4 group"
+                    style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                    <img src="./Images/html.png" alt="html_logo" width="100" height="150">
+                    <h2 class="text-xl font-bold text-gray-900 text-center group-hover:text-white">HTML</h2>
+                </div>
+                <div class="flex flex-col items-center max-w-[200px] max-h-[200px] bg-white hover:bg-[#A53DFF] p-4 lg:p-6 rounded-xl space-y-4 group"
+                    style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                    <img src="./Images/CSS3_logo.svg" alt="css_logo" width="100">
+                    <h2 class="text-xl font-bold text-gray-900 text-center group-hover:text-white">CSS</h2>
+                </div>
+                <div class="flex flex-col items-center max-w-[200px] max-h-[200px] bg-white hover:bg-[#A53DFF] p-4 lg:p-6 rounded-xl space-y-4 group"
+                    style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                    <img src="./Images/js.png" alt="javascript_logo" width="100">
+                    <h2 class="text-xl font-bold text-gray-900 text-center group-hover:text-white">Javascript</h2>
+                </div>
+                <div class="flex flex-col items-center max-w-[200px] max-h-[200px] bg-white hover:bg-[#A53DFF] p-4 lg:p-6 rounded-xl space-y-4 group"
+                    style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                    <img src="./Images/Tailwind CSS.png" alt="tailwindCSS_logo" width="100">
+                    <h2 class="text-xl font-bold text-gray-900 text-center group-hover:text-white">Tailwind</h2>
+                </div>
+                <div class="flex flex-col items-center max-w-[200px] max-h-[200px] bg-white hover:bg-[#A53DFF] p-4 lg:p-6  rounded-xl space-y-4 group"
+                    style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                    <img src="./Images/Spring_Boot.svg" alt="springBoot_logo" width="100">
+                    <h2 class="text-xl font-bold text-gray-900 text-center group-hover:text-white">Spring Boot</h2>
+                </div>
+                <div class="flex flex-col items-center max-w-[200px] max-h-[200px] bg-white hover:bg-[#A53DFF] p-4 lg:p-6 rounded-xl space-y-4 lg:row-start-2 group"
+                    style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                    <img src="./Images/Java.png" alt="java_logo" width="100">
+                    <h2 class="text-xl font-bold text-gray-900 text-center group-hover:text-white">Java</h2>
+                </div>
+                <div class="flex flex-col items-center max-w-[200px] max-h-[200px] bg-white hover:bg-[#A53DFF] p-4 lg:p-6 rounded-xl space-y-4 col-start-2 md:col-start-3 group"
+                    style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
+                        alt="sql_logo" width="100" />
+                    <h2 class="text-xl font-bold text-gray-900 text-center group-hover:text-white">SQL</h2>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="bg-white px-6 py-28 lg:px-16 lg:py-28">
+            <h2 class="text-[2.75rem] font-bold text-center mb-16">Projects</h2>
+            <div class="flex flex-col md:flex-row lg:flex-row gap-8 lg:items-center justify-center mb-16">
+                <button
+                    class="tab-btn px-4 py-2 bg-[#A53DFF] text-white text-xl font-semibold rounded-lg  focus:outline-none"
+                    data-target="all">All Projects</button>
+                <button class="tab-btn px-4 py-2 bg-gray-200 text-xl font-semibold rounded-lg focus:outline-none "
+                    data-target="frontend">Frontend Projects</button>
+                <button class="tab-btn px-4 py-2 bg-gray-200 text-xl font-semibold rounded-lg focus:outline-none"
+                    data-target="backend">Backend Projects</button>
+            </div>
+
+            <!-- Projects Containers -->
+            <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div class="project-card bg-white hover:bg-[#EDD8FF80] flex flex-col justify-between  p-6 space-y-2 rounded-lg group"
+                    data-category="frontend" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    <h2 class="text-3xl font-bold">Uber Clone</h2>
+                    <p class="text-lg text-gray-500 text-justify leading-1 group-hover:text-black">A responsive
+                        Uber-like user
+                        interface built with HTML, Tailwind CSS, and JavaScript. It features a clean design, dynamic
+                        interactions, and seamless performance across devices.</p>
+                    <div class="flex gap-2 items-center">
+                        <a href="https://bhawna0034.github.io/Uber-Clone/"
+                            class="text-lg text-sky-800 border-r-2 pr-2">Live Demo</a>
+                        <a href="https://github.com/Bhawna0034/Uber-Clone.git" target="_blank"
+                            class="text-lg text-sky-800">Code</a>
+                    </div>
+                </div>
+                <div class="project-card bg-white hover:bg-[#EDD8FF80] flex flex-col justify-between p-6 space-y-2 rounded-lg group"
+                    data-category="frontend" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    <h2 class="text-3xl font-bold">ToDesktop Clone</h2>
+                    <p class="text-lg text-gray-500 text-justify leading-1 group-hover:text-black">ToDesktop Clone
+                        developed using
+                        HTML, Tailwind CSS, and JavaScript, featuring a modern and responsive design.</p>
+                    <div class="flex gap-2 items-center">
+                        <a href="https://bhawna0034.github.io/Tailwind-landing-page/"
+                            class="text-lg text-sky-800 border-r-2 pr-2">Live Demo</a>
+                        <a href="https://github.com/Bhawna0034/Tailwind-landing-page.git" target="_blank"
+                            class="text-lg text-sky-800">Code</a>
+                    </div>
+                </div>
+                <div class="project-card bg-white hover:bg-[#EDD8FF80] flex flex-col justify-between p-6 space-y-2 rounded-lg group"
+                    data-category="frontend" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    <h2 class="text-3xl font-bold">Dashboard UI</h2>
+                    <p class="text-lg text-gray-500 text-justify leading-1 group-hover:text-black">A dynamic and
+                        responsive dashboard
+                        designed using HTML, Tailwind CSS, and JavaScript.
+                    </p>
+                    <div class="flex gap-2 items-center">
+                        <a href="https://bhawna0034.github.io/Dashboard-UI/"
+                            class="text-lg text-sky-800 border-r-2 pr-2">Live Demo</a>
+                        <a href="https://github.com/Bhawna0034/Dashboard-UI.git" target="_blank"
+                            class="text-lg text-sky-800">Code</a>
+                    </div>
+                </div>
+                <div class="project-card bg-white hover:bg-[#EDD8FF80] flex flex-col justify-between p-6 space-y-2 rounded-lg group"
+                    data-category="frontend" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    <h2 class="text-3xl font-bold">To-do App</h2>
+                    <p class="text-lg text-gray-500 text-justify leading-1 group-hover:text-black">A simple and
+                        responsive To-Do App
+                        built with HTML, CSS, and JavaScript. It allows users to add, edit, delete, and mark tasks as
+                        complete, providing an intuitive interface for efficient task management.
+                    </p>
+                    <div class="flex gap-2 items-center">
+                        <a href="https://bhawna0034.github.io/To-do-List/"
+                            class="text-lg text-sky-800 border-r-2 pr-2">Live Demo</a>
+                        <a href="https://github.com/Bhawna0034/To-do-List.git" target="_blank"
+                            class="text-lg text-sky-800">Code</a>
+                    </div>
+                </div>
+                <div class="project-card bg-white hover:bg-[#EDD8FF80] flex flex-col justify-between p-6 space-y-2 rounded-lg group"
+                    data-category="backend" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    <h2 class="text-3xl font-bold">Uber Ride Booking Application</h2>
+                    <p class="text-lg text-gray-500 text-justify leading-1 group-hover:text-black">The Uber Ride Booking
+                        Application
+                        is built using Spring Boot, Spring Data JPA, Hibernate, PostGIS, and Spring Security. It enables
+                        secure user authentication, ride booking, and driver-rider matching.
+                    </p>
+
+                    <a href="https://github.com/Bhawna0034/Uber-Booking-Application.git" target="_blank"
+                        class="text-lg text-sky-800">Code</a>
+                </div>
+                <div class="project-card bg-white hover:bg-[#EDD8FF80] flex flex-col justify-between p-6 space-y-2 rounded-lg group"
+                    data-category="backend" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    <h2 class="text-3xl font-bold">College Management System</h2>
+                    <p class="text-lg text-gray-500 text-justify leading-1 group-hover:text-black">The College
+                        Management System is built using Spring Boot and Spring Data JPA to manage entities like
+                        Student, Professor, Subject, and AdmissionRecords.
+                    </p>
+
+                    <a href="https://github.com/Bhawna0034/CollegeManagementSystem-UsingSpringBoot.git" target="_blank"
+                        class="text-lg text-sky-800">Code</a>
+                </div>
+                <div class="project-card bg-white hover:bg-[#EDD8FF80] flex flex-col justify-between p-6 space-y-2 rounded-lg group"
+                    data-category="backend" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                    <h2 class="text-3xl font-bold">ATM Transaction Monitoring System</h2>
+                    <p class="text-lg text-gray-500 text-justify leading-1 group-hover:text-black">The ATM Transaction
+                        Monitoring System is built using Java, JDBC, Java Swing, Java AWT, and MySQL. It manages
+                        functionalities like user authentication, cash withdrawal, deposit, balance inquiry, and PIN
+                        change.
+                    </p>
+
+                    <a href="https://github.com/Bhawna0034/ATM-Transaction-Monitoring-System.git" target="_blank"
+                        class="text-lg text-sky-800">Code</a>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Certificates -->
+        <section id="certificates" class="bg-[#F0F1F3] px-6 py-28 lg:px-16 lg:py-28">
+            <h2 class="text-[2.75rem] font-bold text-center mb-16">Certificates</h2>
+            <div class="grid  grid-col-1 lg:grid-cols-3 gap-6 items-center justify-center">
+                <img src="./Images/Certificate-Java(Basic).jpg" alt="java-certificate" width="500"
+                    style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                <img src="./Images/Certificate-Spring Boot.png" alt="springBoot-certificate" width="500"
+                    style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+                <img src="./Images/Certificate-SQL(Basic).jpg" alt="sql-certificate" width="500"
+                    style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+            </div>
+        </section>
+
+        <!-- Contact  -->
+        <section id="contact" class="bg-[#132238] px-6 py-28 lg:px-16">
+            <h2 class="text-[2.75rem] font-bold text-center text-white mb-16">Contact <span
+                    class="text-[#A53DFF]">Me</span></h2>
+
+            <div class="flex gap-6 items-center justify-between">
+                <!-- Contact Details -->
+                <div class="flex flex-col max-md:items-center w-1/2">
+                    <h2 class="text-[2rem] text-white font-semibold mb-6">Let's Build Something Great Together</h2>
+                    <div class="flex flex-col gap-4 mb-8">
+                        <div class="bg-white flex gap-4 items-center rounded-md py-2 px-4 max-w-[400px]">
+                            <div class="bg-[#EDD8FF80] max-w-[50px] max-h-[50px] px-2 py-1 rounded-lg">
+                                <i class="fa-solid fa-location-dot text-[#A53DFF]"></i>
+                            </div>
+                            <div>
+                                <p class="text-md text-gray-700">Address: <span
+                                        class="text-lg text-gray-900 font-semibold"> Yamuna Nagar, Haryana</span></p>
+
+                            </div>
+                        </div>
+                        <div class="bg-white flex gap-4 items-center rounded-md py-2 px-4 max-w-[400px]">
+                            <div class="bg-[#EDD8FF80] max-w-[50px] max-h-[50px] px-2 py-1 rounded-lg">
+                                <i class="fa-solid fa-envelope font-bold text-[#A53DFF]"></i>
+                            </div>
+                            <div>
+                                <p class="text-md text-gray-700">Email: <span
+                                        class="text-lg text-gray-900 font-semibold"> bhawnaasharma0034</span></p>
+                            </div>
+                        </div>
+                        <div class="bg-white flex gap-4 items-center rounded-md py-2 px-4 max-w-[400px]">
+                            <div class="bg-[#EDD8FF80] max-w-[50px] max-h-[50px] px-2 py-1 rounded-lg">
+                                <i class="fa-solid fa-phone font-bold text-[#A53DFF]"></i>
+                            </div>
+                            <div>
+                                <p class="text-md text-gray-700">Call Me Now: <span
+                                        class="text-lg text-gray-900 font-semibold"> 9729828097</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="home-socials" class="space-x-[1px] ">
+                        <a href="https://www.linkedin.com/in/bhawna0034/" target="_blank"
+                            class="max-w-15 max-h-15 border-2 border-[#FFFFFF] hover:border-[#A53DFF] rounded-full px-3 py-2 hover:bg-[#A53DFF] group"><i
+                                class="fa-brands fa-linkedin-in text-lg font-bold text-white"></i></a>
+                        <a href="https://github.com/Bhawna0034" target="_blank"
+                            class="max-w-15 max-h-15 border-2 border-[#FFFFFF] hover:border-[#A53DFF] rounded-full px-3 py-2 hover:bg-[#A53DFF] group"><i
+                                class="fa-brands fa-github font-bold text-lg text-white"></i></a>
+                        <a href="https://www.hackerrank.com/profile/bhawnasharma7216" target="_blank"
+                            class="max-w-15 max-h-15 border-2 border-[#FFFFFF] hover:border-[#A53DFF] rounded-full px-3 py-2 hover:bg-[#A53DFF] group"><i
+                                class="fa-brands fa-hackerrank font-bold text-lg text-white"></i></a>
+                        <a href="mailto:bhawnaasharma0034@gmail.com"
+                            class="max-w-15 max-h-15 border-2 border-[#FFFFFF] hover:border-[#A53DFF] rounded-full px-3 py-2 hover:bg-[#A53DFF] group">
+                            <i class="fa-solid fa-envelope font-bold text-lg text-white"></i></a>
+
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="flex flex-col w-1/2">
+                    <form id="contact-form"  action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                        <input type="hidden" name="access_key" value="ee76bb1d-002e-45fc-af26-f65d694bbe06">
+
+                        <div class="flex flex-col gap-2">
+                            <label for="name" class="text-xl text-white font-semibold">Name</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full text-white bg-transparent border border-gray-300  px-4 py-2 rounded-md"
+                                required>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="email" class="text-xl text-white font-semibold">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full text-white bg-transparent border border-gray-300  px-4 py-2 rounded-md"
+                                required>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="message" class="text-xl text-white font-semibold">Message</label>
+                            <textarea id="message" name="message"
+                                class="w-full text-white px-4 py-2 bg-transparent border border-gray-300 rounded-md"
+                                required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit"
+                                class="bg-[#A53DFF] text-white text-xl font-semibold px-4 py-2 rounded-lg hover:opacity-80">Submit</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#fffdf8] px-6 py-2 lg:px-16">
+        <div class="flex items-center justify-between">
+            <p class="text-gray-400">Copyrights &copy; 2025</p>
+            <p class="text-gray-500">Need a Portfolio Website like this | Contact <span
+                    class="text-[#2a3d66] font-bold"><a href="https://www.linkedin.com/in/bhawna0034/">Bhawna
+                        Sharma</a></span></p>
+            <button onclick="scrollToTop()"
+                class="bg-[#A53DFF] max-w-[50px] max-h-[50px] px-2 py-1 rounded-full flex items-center justify-center">
+                <a href=#home><i class="fa-solid fa-chevron-up text-white"></i></a>
+            </button>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
