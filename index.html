@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -12,12 +12,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="max-w-[1440px] mx-auto overflow-x-hidden scroll-smooth relative ">
+<body class="max-w-[1440px] mx-auto overflow-x-hidden  relative ">
     <!-- Header -->
     <header class="fixed top-0 w-full bg-white flex items-center justify-between z-10 px-6 py-2 lg:px-16 lg:py-4 z-10"
         style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
         <a href="#" class="text-[2rem] text-gray-900 font-bold">Portfolio</a>
-        <i class="lg:hidden fa-solid fa-bars text-[2rem] cursor-pointer" id="menu-icon"></i>
+        <button onclick="handleMenu()" class="lg:hidden">
+            <i class="fa-solid fa-bars text-[2rem] cursor-pointer" id="menu-icon"></i>
+        </button>
         <nav class="hidden lg:flex space-x-6">
             <a href="#home" class="text-[1.2rem] text-[#333333] font-medium active:text-black">Home</a>
             <a href="#about" class="text-[1.2rem] text-[#333333] font-medium">About</a>
@@ -28,17 +30,38 @@
                 <a href="#contact" class="text-[1.2rem] text-white font-medium">Contact</a>
             </button>
         </nav>
+        <div id="nav-dialog" class="hidden bg-white fixed inset-0 z-10 md:hidden">
+            <div id="nav-bar" class="flex items-center justify-between px-6 py-2">
+                <a href="#" class="text-[2rem] text-gray-900 font-bold">Portfolio</a>
+                <button onclick="handleMenu()" class="lg:hidden">
+                    <i class="fa-solid fa-xmark text-[2rem] cursor-pointer" id="menu-icon"></i>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-4 px-6 py-3">
+                <a href="#home" class="nav-link text-[1.5rem] text-[#333333] font-medium active:text-black">Home</a>
+                <a href="#about" class="nav-link text-[1.5rem] text-[#333333] font-medium">About</a>
+                <a href="#skills" class="nav-link text-[1.5rem] text-[#333333] font-medium">Skills</a>
+                <a href="#projects" class="nav-link text-[1.5rem] text-[#333333] font-medium">Projects</a>
+                <a href="#certificates" class="nav-link text-[1.5rem] text-[#333333] font-medium">Certificates</a>
+                <div class="bg-gray-300 w-full h-[1px]"></div>
+                <button class="bg-[#A53DFF] px-8 py-2  w-fit rounded-md">
+                    <a href="#contact" class="text-[1.5rem] text-white font-medium">Contact</a>
+                </button>
+            </div>
+
+        </div>
+
     </header>
 
-    <main class="">
+    <main>
         <!-- Home -->
-        <section id="home" class="bg-gradient-to-r from-white to-purple-100 px-6 lg:px-16  py-28 lg:py-36 ">
+        <section id="home" class="scroll-mt-20 bg-gradient-to-r from-white to-purple-100 px-6 py-36 lg:px-16  ">
             <div class="flex flex-col lg:flex-row gap-6 items-center justify-between ">
                 <!-- Left Home -->
                 <div class="space-y-6 lg:w-[60%]">
-                    <div class="space-y-1">
-                        <h1 class="text-[3rem] text-gray-500 font-semibold">👋Hi, I'm </h1>
-                        <h2 class="text-[3.6rem] lg:text-[4.5rem] text-[#A53DFF] font-bold mb-2">Bhawna Sharma</h2>
+                    <div class="leading-none">
+                        <h1 class="text-[1.80rem] text-gray-500 font-semibold mb-4">👋Hi, I'm </h1>
+                        <h2 class="text-[3.6rem] lg:text-[4.5rem] text-[#A53DFF] font-bold mb-4">Bhawna Sharma</h2>
                         <h3 class="text-[2rem] text-[#132238] font-medium">Frontend Developer Intern</h3>
                     </div>
 
@@ -78,7 +101,7 @@
         </section>
 
         <!-- About -->
-        <section id="about" class="bg-white px-6 py-28 lg:px-16 lg:py-28">
+        <section id="about" class="scroll-mt-20 px-6 py-28 lg:px-16 lg:py-28">
             <div class="flex flex-col items-center gap-y-2">
                 <h2 class="text-[2.75rem] font-bold">About <span class="text-[#A53DFF]">Me</span></h2>
                 <p class="text-lg text-justify font-medium">I’m a Frontend Developer with a strong foundation in HTML,
@@ -96,7 +119,7 @@
         </section>
 
         <!-- Skills -->
-        <section id="skills" class="bg-[#EDD8FF80] px-6 py-28 lg:px-16 lg:py-28">
+        <section id="skills" class="scroll-mt-20 bg-[#EDD8FF80] px-6 py-28 lg:px-16 lg:py-28">
             <h2 class="text-[2.75rem] font-bold text-center mb-16">Technical <span class="text-[#A53DFF]">Skills</span>
             </h2>
             <div class="grid max-md:grid-cols-3 lg:flex flex-wrap gap-8  items-center justify-center mx-auto">
@@ -141,7 +164,7 @@
         </section>
 
         <!-- Projects -->
-        <section id="projects" class="bg-white px-6 py-28 lg:px-16 lg:py-28">
+        <section id="projects" class="scroll-mt-20 bg-white px-6 py-28 lg:px-16 lg:py-28">
             <h2 class="text-[2.75rem] font-bold text-center mb-16">Projects</h2>
             <div class="flex flex-col md:flex-row lg:flex-row gap-8 lg:items-center justify-center mb-16">
                 <button
@@ -252,7 +275,7 @@
         </section>
 
         <!-- Certificates -->
-        <section id="certificates" class="bg-[#F0F1F3] px-6 py-28 lg:px-16 lg:py-28">
+        <section id="certificates" class="scroll-mt-20 bg-[#F0F1F3] px-6 py-28 lg:px-16 lg:py-28">
             <h2 class="text-[2.75rem] font-bold text-center mb-16">Certificates</h2>
             <div class="grid  grid-col-1 lg:grid-cols-3 gap-6 items-center justify-center">
                 <img src="./Images/Certificate-Java(Basic).jpg" alt="java-certificate" width="500"
@@ -265,7 +288,7 @@
         </section>
 
         <!-- Contact  -->
-        <section id="contact" class="bg-[#132238] px-6 py-28 lg:px-16">
+        <section id="contact" class="scroll-mt-20 bg-[#132238] px-6 py-28 lg:px-16">
             <h2 class="text-[2.75rem] font-bold text-center text-white mb-16">Contact <span
                     class="text-[#A53DFF]">Me</span></h2>
 
@@ -322,7 +345,7 @@
 
                 <!-- Contact Form -->
                 <div class="flex flex-col w-1/2">
-                    <form id="contact-form"  action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
                         <input type="hidden" name="access_key" value="ee76bb1d-002e-45fc-af26-f65d694bbe06">
 
                         <div class="flex flex-col gap-2">

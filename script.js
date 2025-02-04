@@ -1,3 +1,20 @@
+const navLinks = document.querySelectorAll('.nav-link');
+function handleMenu(){
+    const navDialog = document.getElementById('nav-dialog');
+    navDialog.classList.toggle('hidden');
+   
+}
+navLinks.forEach(link => {
+    link.addEventListener('click', function(event){
+        event.preventDefault();
+        const targetId = this.getAttribute('href');
+        document.querySelector(targetId).scrollIntoView({
+            behavior: 'smooth'
+        });
+        handleMenu();
+    });
+});
+
 const tabButtons = document.querySelectorAll('.tab-btn');
 const projectCards = document.querySelectorAll('.project-card');
 // Loop through each tab button
